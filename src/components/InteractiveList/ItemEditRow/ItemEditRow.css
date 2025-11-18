@@ -1,0 +1,23 @@
+/* ===== ItemEditRow Component Styles ===== */
+
+/* Container */
+.il-item-edit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+}
+
+/* Inline input - extends base .il-input from shared.css */
+.il-input--inline {
+  border: 1px solid #ddd;
+}
+
+.il-input--inline:focus {
+  border-color: #1f2d3d;
+}
+
+/* Error state */
+.il-item-edit--error .il-input--inline {
+  border-color: #d9534f;
+}

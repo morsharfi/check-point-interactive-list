@@ -1,0 +1,39 @@
+/* ===== Shared Styles ===== */
+
+.il-input {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  font-size: 14px;
+  min-width: 0; 
+  max-width: 100%;
+}
+
+.il-input:focus {
+  outline: none;
+}
+
+.il-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Icon button - used by ItemRow and ItemEditRow */
+.il-icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.il-icon-btn:hover {
+  opacity: 0.7;
+}
+
+.il-icon-btn:active {
+  opacity: 0.5;
+}
+

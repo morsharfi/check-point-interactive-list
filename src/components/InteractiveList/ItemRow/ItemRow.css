@@ -1,0 +1,25 @@
+/* ===== ItemRow Component Styles ===== */
+
+.il-item-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.il-item-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.il-item-actions {
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.il-item:hover .il-item-actions {
+  opacity: 1;
+}
