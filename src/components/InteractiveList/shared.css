@@ -1,5 +1,3 @@
-/* ===== Shared Styles ===== */
-
 .il-input {
   flex: 1;
   padding: 6px;
@@ -18,7 +16,6 @@
   cursor: not-allowed;
 }
 
-/* Icon button - used by ItemRow and ItemEditRow */
 .il-icon-btn {
   border: none;
   background: none;
@@ -36,4 +33,3 @@
 .il-icon-btn:active {
   opacity: 0.5;
 }
-

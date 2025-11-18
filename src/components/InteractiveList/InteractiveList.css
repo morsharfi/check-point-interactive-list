@@ -1,6 +1,3 @@
-/* ===== InteractiveList Component Styles ===== */
-
-/* Wrapper */
 .il-wrapper {
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -20,7 +17,6 @@
   pointer-events: none;
 }
 
-/* Header */
 .il-header {
   background: #1f2d3d;
   color: white;
@@ -30,7 +26,6 @@
   border-radius: 4px 4px 0 0;
 }
 
-/* Empty State */
 .il-empty-state {
   padding: 16px;
   text-align: center;
@@ -38,14 +33,12 @@
   font-size: 18px;
 }
 
-/* Items List */
 .il-items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Item (li element) - styles the container for ItemRow/ItemEditRow */
 .il-item {
   border-bottom: 1px solid #f0f0f0;
   padding: 10px;
