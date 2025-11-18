@@ -42,3 +42,7 @@ export const RegexValidation: Story = {
     return <Wrapper items={[]} regexValidate={urlRegex} />;
   },
 };
+
+export const ReadOnly: Story = {
+  render: () => <Wrapper items={["www.google.com/", "www.github.com/"]} readOnly={true} />,
+};
