@@ -8,5 +8,6 @@ export interface InteractiveListProps {
   error?: boolean;
   emptyMessage?: string;
   placeholder?: string;
+  maxRows?: number;
 }
 export type ValidationErrorKind = "empty" | "custom" | "regex" | null;

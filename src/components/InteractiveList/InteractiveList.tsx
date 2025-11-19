@@ -23,7 +23,7 @@ export const InteractiveList: React.FC<InteractiveListProps> = (props) => {
     removeItem,
   } = useInteractiveList(props);
 
-  const { items, loading, readOnly, error, emptyMessage, placeholder } = props;
+  const { items, loading, readOnly, error, emptyMessage, placeholder, maxRows = 10 } = props;
 
   return (
     <div
@@ -49,7 +49,13 @@ export const InteractiveList: React.FC<InteractiveListProps> = (props) => {
       {items.length === 0 ? (
         <div className="il-empty-state">{emptyMessage}</div>
       ) : (
-        <ul className="il-items">
+        <ul 
+          className="il-items"
+          style={{
+            maxHeight: `${maxRows * 44}px`,
+            overflowY: items.length > maxRows ? 'auto' : 'visible'
+          }}
+        >
           {items.map((text, i) => (
             <li key={i} className="il-item">
               {editingIndex === i ? (

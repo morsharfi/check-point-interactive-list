@@ -13,11 +13,16 @@
 
 .il-item-actions {
   display: flex;
-  gap: 8px;
-  opacity: 0;
+  flex: 0 0 0;
+  width: 0;
+  overflow: hidden;
+  min-width: 0;
   transition: opacity 0.2s ease;
 }
 
 .il-item:hover .il-item-actions {
   opacity: 1;
+  flex-basis: auto;
+  width: auto;
 }
+

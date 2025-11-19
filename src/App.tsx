@@ -22,6 +22,7 @@ export default function App() {
         emptyMessage="No Network / IP Address / IP range or Domain Added just yet"
         loading={loading}
         placeholder="(e.g: www.website.com/) use Enter or + to add it to list"
+        regexValidate={/@/}
       />
     </div>
   );
